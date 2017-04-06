@@ -1,4 +1,31 @@
-link {
-    font-family: 'Comfortaa', cursive;
+body {
+    background: #1faee9 ;
 }
-div {}
+.site {
+    padding-left: 2%;
+    padding-top: 2%;
+    color: #fffafa
+}
+.column {
+    background: white;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 20% ;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+.square{
+    /*width: 10%;
+    height: 10%;*/
+    background: #cfd1fd;
+    border-radius: 10px;
+    padding: 2%;
+}
+.mainsquare{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-top: 1%;   
+}
