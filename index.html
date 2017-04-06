@@ -3,39 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <link stylesheet="main.css">
+    <link rel="stylesheet" href="main.css">
     <title>ДЗ Интеллектуал</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet1">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&amp;subset=cyrillic" rel="stylesheet2">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+        ul {
+            width: 180px;
+            /* Ширина меню */
+            list-style: none;
+            /* Для списка убираем маркеры */
+            margin: 0;
+            /* Нет отступов вокруг */
+            padding: 0;
+            /* Убираем поля вокруг текста */
+            font-family: 'Neucha', cursive;
+            /* Рубленый шрифт для текста меню */
+            font-size: large;
+            /* Размер названий в пункте меню */
+        }
+        
+        li ul {
+            /*position: absolute;
+             Подменю позиционируются абсолютно */
+            display: none;
+            /* Скрываем подменю */
+            /* margin-left: 165px;
+            Сдвигаем подменю вправо */
+            margin-top: -2em;
+            /* Сдвигаем подменю вверх */
+        }
+        
+        li a {
+            display: block;
+            /* Ссылка как блочный элемент */
+            padding: 5px;
+            /* Поля вокруг надписи */
+            text-decoration: none;
+            /* Подчеркивание у ссылок убираем */
+            color: #666;
+            /* Цвет текста */
+            border: 1px solid #ccc;
+            /* Рамка вокруг пунктов меню */
+            background-color: #f0f0f0;
+            /* Цвет фона */
+            border-bottom: none;
+            /* Границу снизу не проводим */
+        }
+        
+        li a:hover {
+            color: #ffe;
+            /* Цвет текста активного пункта */
+            background-color: #5488af;
+            /* Цвет фона активного пункта */
+        }
+        
+        li:hover ul {
+            display: block;
+            /* При выделении пункта курсором мыши отображается подменю */
+        }
+        
+        .brd {
+            border-bottom: 1px solid #ccc;
+            /* Линия снизу */
+        }
+    </style>
 </head>
 
 <body link="red" vlink="#0c6b1c" alink="#ff0000">
-    
-    <h1><b>Шестиклассник!</b></h1><br>
+    <div class="site">
+        <p> hometaskintel.github.io </p>
+    </div>
+    <div class="column">
+        <style>
+            body {
+                font-family: 'Neucha', cursive;
+                font-size: large
+            }
+        </style>
 
-    <h3> Мы рады, что ты зашел на <i>hometaskintel.github.io.</i> Здесь ты сможешь посмотреть домашнее задание по любому предмету
-        в любой группе! </h3>
-    <div>
-        А теперь выбери предмет, по которому ты хочешь узнать задание:</div><br>
-    <a href="">Русский язык</a><br>
-    <a href="">Литература</a><br>
-    <a href="">Математика</a><br>
-    <a href="">История</a><br>
-    <a href="">География</a><br>
-    <a href="">Английский язык</a><br>
-    <a href="">Немецкий язык</a><br>
-    <a href="">Французский язык</a><br>
-    <a href="">Испанский язык</a><br>
-    <a href="">Музыка</a><br>
-    <a href="">Физическая культура</a><br>
-    <a href="">Информатика и ИКТ</a><br>
-    <a href="">Изобразительное Искусство</a><br>
-    <a href="">Биология</a><br>
-    <a href="">5 задач</a><br>
+        <h1><b>Новые возможности - посмотри домашнее задание за 2 клика!</b></h1><br>
 
+        <h3> Здесь ты сможешь посмотреть домашнее задание по любому предмету в любой группе! </h3>
 
+        Выбери предмет, по которому ты хочешь узнать задание: <br>
+        <div class="mainsquare">
+            <div class="square">
+                <ul class="menu">
+                    <li>
+                        <p> Гуманитарные науки </p><br>
+                        <ul>
+                            <li><a href="">Русский язык </a></li><br>
+                            <li><a href="">Литература </a></li><br>
+                            <li><a href="">История </a></li><br>
+                            <li><a href="">Музыка </a></li><br>
+                            <li><a href="">Английский язык </a></li><br>
+                            <li><a href="">Французский язык </a></li><br>
+                            <li><a href="">Немецкий язык </a></li><br>
+                            <li><a href="">Испанский язык </a></li><br>
+                        </ul>
+                    </li>
 
-
+            </div>
+            <div class="square">
+                <ul class="menu">
+                    <li>
+                        <p> Математические науки </p><br>
+                        <ul>
+                            <li><a href="">Математика </a></li><br>
+                            <li><a href="">Информатика и ИКТ </a></li><br>
+                            <li><a href="">5 задач</a></li><br>
+                        </ul>
+                    </li>
+            </div>
+            <div class="square">
+                <ul class="menu">
+                    <li>
+                        <p> Естественные науки </p><br>
+                        <ul>
+                            <li><a href="">Биология </a></li><br>
+                            <li><a href="">География </a></li><br>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
