@@ -1,5 +1,8 @@
+
 body {
     background: #1faee9 ;
+    
+
 }
 .site {
     padding-left: 2%;
@@ -27,5 +30,9 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: stretch;
-    padding-top: 1%;   
+    padding-top: 1%;
+    
+}
+.shift{
+    margin-top: 2% ;
 }
