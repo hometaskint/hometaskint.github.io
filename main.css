@@ -23,6 +23,7 @@ body {
     background: #cfd1fd;
     border-radius: 10px;
     padding: 2%;
+    margin-bottom: 5%;
 }
 .mainsquare{
     display: flex;
