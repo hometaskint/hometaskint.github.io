@@ -4,74 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>ДЗ Интеллектуал</title>
     <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
-    <style>
-        ul {
-            width: 180px;
-            /* Ширина меню */
-            list-style: none;
-            /* Для списка убираем маркеры */
-            margin: 0;
-            /* Нет отступов вокруг */
-            padding: 0;
-            /* Убираем поля вокруг текста */
-            font-family: 'Neucha', cursive;
-            /* Шрифт для текста меню */
-            font-size: large;
-            /* Размер названий в пункте меню */
-        }
-        
-        li ul {
-            /*position: absolute;
-             Подменю позиционируются абсолютно */
-            display: none;
-            /* Скрываем подменю */
-            /* margin-left: 165px;
-            Сдвигаем подменю вправо */
-            margin-top: -2em;
-            /* Сдвигаем подменю вверх */
-        }
-        
-        li a {
-            display: block;
-            /* Ссылка как блочный элемент */
-            padding: 5px;
-            /* Поля вокруг надписи */
-            text-decoration: none;
-            /* Подчеркивание у ссылок убираем */
-            color: #666;
-            /* Цвет текста */
-            border: 1px solid #ccc;
-            /* Рамка вокруг пунктов меню */
-            background-color: #f0f0f0;
-            /* Цвет фона */
-            border-bottom: none;
-            /* Границу снизу не проводим */
-        }
-        
-        li a:hover {
-            color: #ffe;
-            /* Цвет текста активного пункта */
-            background-color: #5488af;
-            /* Цвет фона активного пункта */
-        }
-        
-        li:hover ul {
-            display: block;
-            /* При выделении пункта курсором мыши отображается подменю */
-        }
-        
-        .brd {
-            border-bottom: 1px solid #ccc;
-            /* Линия снизу */
-        }
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen"> }
     </style>
 </head>
 
 <body link="red" vlink="#0c6b1c" alink="#ff0000">
-    <div class="site">
-        <p> hometaskint.github.io </p>
+    <script src="http://code.jquery.com/jquery-latest.js">
+
+    </script>
+    <script src="js/bootstrap.min.js">
+
+    </script>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                </a>
+
+                <ul class="nav">
+                    <a class="brand" href="#">hometaskint.github.io</a>
+                    <li class="active">
+                        <a href="#">На главную</a>
+                    </li>
+                    <li><a href="news.html">Новости и объявления</a></li>
+                    <li><a href="#">Личная подборка</a></li>
+                    <li><a href="#">Контакты учителей</a></li>
+                    <li><a href="#">Вопросы и предложения</a></li>
+
+                </ul>
+
+
+
+            </div>
+        </div>
     </div>
     <div class="column">
         <style>
@@ -81,51 +53,49 @@
             }
         </style>
 
+
         <h1><b>Новые возможности - посмотри домашнее задание за 1 клик!</b></h1><br>
+
+        <a href="news.html">А тут ты можешь увидеть важные новости и объявления нашего класса</a>
 
         <h3> Здесь ты сможешь посмотреть домашнее задание по любому предмету в любой группе! </h3>
 
         Выбери предмет, по которому ты хочешь узнать задание: <br>
-        <div class="mainsquare">
-            <div class="square">
-                <ul class="menu">
-                    <li>
-                        <p> Гуманитарные науки </p><br>
-                        <ul>
-                            <li><a href="rus.html">Русский язык </a></li><br>
-                            <li><a href="lit.html">Литература </a></li><br>
-                            <li><a href="hist.html">История </a></li><br>
-                            <li><a href="mus.html">Музыка </a></li><br>
-                            <li><a href="eng.html">Английский язык </a></li><br>
-                            <li><a href="fr.html">Французский язык </a></li><br>
-                            <li><a href="de.html">Немецкий язык </a></li><br>
-                            <li><a href="sp.html">Испанский язык </a></li><br>
-                        </ul>
-                    </li>
 
+        <div class="btn-toolbar" style="margin: 0;">
+
+            <div class="btn-group">
+                <button class="btn dropdown-toggle" "guman" data-toggle="dropdown">Гуманитарные науки <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="rus.html">Русский язык </a></li>
+                    <li><a href="lit.html">Литература </a></li>
+                    <li><a href="hist.html">История </a></li>
+                    <li><a href="mus.html">Музыка </a></li>
+                    <li><a href="eng.html">Английский язык </a></li>
+                    <li><a href="fr.html">Французский язык </a></li>
+                    <li><a href="de.html">Немецкий язык </a></li>
+                    <li><a href="sp.html">Испанский язык </a></li>
+                </ul>
             </div>
-            <div class="square">
-                <ul class="menu">
-                    <li>
-                        <p> Математические науки </p><br>
-                        <ul>
-                            <li><a href="mat.html">Математика </a></li><br>
-                            <li><a href="inf.html">Информатика и ИКТ </a></li><br>
-                            <li><a href="5pr.html">5 задач</a></li><br>
-                        </ul>
-                    </li>
+            <div class="btn-group">
+                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Математические науки<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="mat.html">Математика </a></li>
+                    <li><a href="inf.html">Информатика и ИКТ </a></li>
+                    <li><a href="5pr.html">5 задач</a></li>
+                </ul>
             </div>
-            <div class="square">
-                <ul class="menu">
-                    <li>
-                        <p> Естественные науки </p><br>
-                        <ul>
-                            <li><a href="bio.html">Биология </a></li><br>
-                            <li><a href="geo.html">География </a></li><br>
-                        </ul>
-                    </li>
+
+            <div class="btn-group">
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Естественные науки <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="bio.html">Биология </a></li>
+                    <li><a href="geo.html">География </a></li>
+                </ul>
             </div>
+
         </div>
+    </div>
     </div>
 </body>
 
