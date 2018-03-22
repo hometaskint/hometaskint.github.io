@@ -3,8 +3,7 @@ from http.server import HTTPServer, CGIHTTPRequestHandler
 server_address = ("", 8000)
 httpd = HTTPServer(server_address, CGIHTTPRequestHandler)
 httpd.serve_forever()
-import cgi
-import html
+import index.html
 
 form = cgi.FieldStorage()
 text1 = form.getfirst("TEXT_1", "не задано")
